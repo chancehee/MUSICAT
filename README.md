@@ -24,7 +24,7 @@ ChatGPT & 인공지능 음성기술을 결합한 인공지능 라디오 DJ
 1. 인증/인가 
     - 카카오 소셜 로그인 : OAuth 2.0 사용
     - JWT를 사용한 인가 기능  
-    - Spring Security를 활용한 사용자/관리자 권한에 따른 인증/인가 제어 
+    - Spring Security를 활용한 사용자/관리자 권한에 따른 인증/인가 
 2. 음악 스트리밍 (YouTube API)
     - 재생 중인 노래 제목 하이라이팅 
     - 신청곡 재생 목록 상위 10개 표시
@@ -95,215 +95,6 @@ ChatGPT & 인공지능 음성기술을 결합한 인공지능 라디오 DJ
     * Naver Clova API
     * Chat GPT API
 
-## 프로젝트 파일 구조
-### 백엔드
-```bash
-.
-├── gradle
-│   └── wrapper
-└── src
-    ├── main
-    │   ├── java
-    │   │   └── com
-    │   │       └── musicat
-    │   │           ├── Oauth
-    │   │           ├── auth
-    │   │           ├── config
-    │   │           ├── controller
-    │   │           │   ├── item
-    │   │           │   ├── notice
-    │   │           │   ├── radio
-    │   │           │   └── user
-    │   │           ├── data
-    │   │           │   ├── dto
-    │   │           │   │   ├── alert
-    │   │           │   │   │   ├── request
-    │   │           │   │   │   └── response
-    │   │           │   │   ├── chat
-    │   │           │   │   ├── item
-    │   │           │   │   ├── music
-    │   │           │   │   ├── notice
-    │   │           │   │   ├── radio
-    │   │           │   │   ├── socket
-    │   │           │   │   ├── spotify
-    │   │           │   │   ├── story
-    │   │           │   │   └── user
-    │   │           │   ├── entity
-    │   │           │   │   ├── item
-    │   │           │   │   ├── notice
-    │   │           │   │   ├── radio
-    │   │           │   │   └── user
-    │   │           │   └── repository
-    │   │           │       ├── item
-    │   │           │       ├── notice
-    │   │           │       ├── radio
-    │   │           │       └── user
-    │   │           ├── handler
-    │   │           ├── interceptor
-    │   │           ├── jwt
-    │   │           ├── service
-    │   │           │   ├── chat
-    │   │           │   ├── item
-    │   │           │   ├── kafka
-    │   │           │   ├── notice
-    │   │           │   ├── radio
-    │   │           │   ├── socket
-    │   │           │   └── user
-    │   │           └── util
-    │   │               └── builder
-    │   └── resources
-    │       └── static
-    └── test
-        └── java
-            └── com
-                └── musicat
-```
-
-### 프론트엔드
-```bash
-.
-├── public
-│   ├── graphic
-│   │   ├── animation
-│   │   ├── background
-│   │   │   ├── 1
-│   │   │   └── 2
-│   │   └── cat
-│   └── img
-│       ├── background
-│       ├── badge
-│       ├── cd
-│       ├── pagebackground
-│       ├── tape
-│       └── theme
-└── src
-    ├── asset
-    │   ├── font
-    │   └── img
-    ├── atoms
-    ├── components
-    │   ├── broadcast
-    │   │   ├── graphicCanvas
-    │   │   │   └── background
-    │   │   └── radioPlayer
-    │   ├── common
-    │   │   ├── board
-    │   │   ├── button
-    │   │   ├── input
-    │   │   ├── modal
-    │   │   ├── pagenation
-    │   │   ├── selectBox
-    │   │   └── songSearch
-    │   ├── header
-    │   │   ├── onairSign
-    │   │   └── popover
-    │   └── sideNav
-    │       ├── mypageNav
-    │       └── tapeNav
-    │           ├── CDplayer
-    │           ├── Tape
-    │           ├── tapeButtons
-    │           └── volumeBar
-    ├── connect
-    │   ├── axios
-    │   │   └── queryHooks
-    │   └── socket
-    ├── customHooks
-    ├── pages
-    │   ├── common
-    │   │   ├── loadingSpinner
-    │   │   ├── loginSuccess
-    │   │   └── page404
-    │   ├── home
-    │   │   ├── about
-    │   │   ├── chat
-    │   │   ├── songRequest
-    │   │   │   └── songList
-    │   │   │       └── songDetailModal
-    │   │   └── story
-    │   │       ├── contentBox
-    │   │       └── contentPlus
-    │   └── mypage
-    │       ├── inventory
-    │       │   └── inventoryModal
-    │       ├── myinfo
-    │       │   └── myinfoModal
-    │       ├── notice
-    │       ├── noticeDetail
-    │       ├── noticeManage
-    │       ├── noticeManageModify
-    │       └── userManage
-    │           └── SelectedUsers
-    └── types
-```
-### 라디오 서버
-```bash
-.
-├── api_chatgpt.py
-├── api_naver_tts.py
-├── database.py
-├── kafka_handler.py
-├── logic_chat.py
-├── logic_empty.py
-├── logic_music.py
-├── logic_opening.py
-├── logic_story.py
-├── main.py
-├── my_logger.py
-├── my_util.py
-├── radio_progress.py
-├── shared_env.py
-├── shared_state.py
-└── tts
-    └── mymusic
-```
-
-## 역할 분배
-| 이름 | 사진 | 역할 | 정보 |
-| ---- | ---- | ---- | ---- |
-| 김동언 | ![김동언](./image/human1.png) | 백엔드 | SpringBoot / Oauth / Security |
-| 이찬희 | ![이찬희](./image/human2.png) | 백엔드 | SpringBoot / STOMP |
-| 최웅렬 | ![최웅렬](./image/human4.png) | 백엔드 | Apache Kafka / FastApi / CI/CD |
-| 이연학 | ![이연학](./image/human6.png) | 프론트엔드 | React |
-| 박동환 | ![박동환](./image/human3.png) | 프론트엔드 | React |
-| 최다은 | ![최다은](./image/human5.png) | 프론트엔드 | React |
-
-## 프로젝트 산출물
-
-### 기능 기획서
-  ![기능 기획서](./image/work1.png)
-  ![기능 기획서](./image/work2.png)
-
-  ---
-
-### 시스템 아키택쳐
-  ![아키텍쳐](./image/system.png)
-
-  ---
-
-### API 명세서
-  ![API 명세서](./image/api1.png)
-  ![API 명세서](./image/api2.png)
-  ![API 명세서](./image/api3.png)
-  ![API 명세서](./image/api4.png)
-  ![API 명세서](./image/api5.png)
-  ![API 명세서](./image/api6.png)
-  ![API 명세서](./image/api7.png)
-  ![API 명세서](./image/api8.png)
-
-  ---
-
-### ERD 다이어그램
-  ![ERD](./image/ERD.png)
-
-  ---
-
-### MockUp & Design
-  ![mockup](./image/mockup1.png)
-  ![mockup](./image/mockup2.png)
-  ![mockup](./image/mockup3.png)
-
-  ---
 
 ## 서비스 동작 이미지와 설명
 
@@ -335,11 +126,50 @@ ChatGPT & 인공지능 음성기술을 결합한 인공지능 라디오 DJ
 ![관리자페이지](./image/관리자페이지.gif)  
 다른 사용자들의 상태를 관리하는 페이지. 관리자만 들어갈 수 있다. 사용자들의 채팅, 정지 여부 상태를 변경 가능하다.
 
+## 👪 개발 멤버 소개
 
+<table>
+    <tr>
+        <td height="140px" align="center"> 
+            <img src="./image/human5.png" width="140px" /> <br><br> 😶 최다은 <br>(Front-End) </a> <br></td>
+        <td height="140px" align="center"> <a href="https://github.com/blosson">
+            <img src="./image/human3.png" width="140px" /> <br><br> 🙂 박동환 <br>(Front-End) </a> <br></td>
+        <td height="140px" align="center"> <a href="https://github.com/Byongho96">
+            <img src="./image/human6.png" width="140px" /> <br><br> 😆 이연학 <br>(Front-End) </a> <br></td>
+        <td height="140px" align="center"> <a href="https://github.com/chancehee">
+            <img src="./image/human1.png" width="140px" /> <br><br> 👑 김동언 <br>(Back-End) </a> <br></td>
+        <td height="140px" align="center"> <a href="https://github.com/calicedev">
+            <img src="./image/human2.png" width="140px" /> <br><br> 😁 이찬희 <br>(Back-End) </a> <br></td>
+		<td height="140px" align="center"> <a href="https://github.com/holicmiku">
+            <img src="./image/human4.png" width="140px" /> <br><br> 😶 최웅렬 <br>(Back-End) </a> <br></td>
+    </tr>
+</table>
+
+## 프로젝트 산출물
+
+### 기능 기획서
+  ![기능 기획서](./image/work1.png)
+
+  ---
+
+### 시스템 아키택쳐
+  ![아키텍쳐](./image/system.png)
+
+  ---
+
+### API 명세서
+  ![API 명세서](./image/api1.png)
+  
+  ---
+
+### ERD 다이어그램
+  ![ERD](./image/ERD.png)
+
+  ---
 
 ## 프로젝트 참고 링크
 
 - [프로젝트 Notino](https://ramen-buang.notion.site/SSAFY-2-MusiCat-6ce1496529df4689bdae266db3d50466) Musicat
-- [GitHub - Link](자기 githut 링크) 포트폴리오 Github Link
+
 
 
