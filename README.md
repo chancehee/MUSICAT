@@ -3,7 +3,7 @@
 ![프로젝트 로고](./image/Logo.png/)
 ChatGPT & 인공지능 음성기술을 결합한 인공지능 라디오 DJ 
 
-프로젝트 URL : [AI DJ Musicat](https://musicat.kr)
+프로젝트 URL : [AI DJ Musicat]
 
 프로젝트 UCC : [Musicat - UCC](https://ramen-buang.notion.site/Musicat-UCC-c561acbeb18743fb94ad90b9eeb6be23)
 
@@ -169,7 +169,7 @@ ChatGPT & 인공지능 음성기술을 결합한 인공지능 라디오 DJ
 
 ## 프로젝트 참고 링크
 
-- [프로젝트 Notino](https://ramen-buang.notion.site/SSAFY-2-MusiCat-6ce1496529df4689bdae266db3d50466) Musicat
+- [프로젝트 Notion](https://ramen-buang.notion.site/SSAFY-2-MusiCat-6ce1496529df4689bdae266db3d50466) Musicat
 
 
 
