@@ -135,18 +135,25 @@ Musicat은 인공지능 DJ가 진행하는 고품격 라디오 서비스입니�
 ## 📋 상세 페이지
 
 ### 메인페이지
-![메인페이지](./image/메인페이지.gif)  
+![메인](https://github.com/chancehee/MUSICAT/assets/59447235/3100403c-db4c-414f-96db-2b6165f36318)  
+<!-- ![메인페이지](./image/메인페이지.gif) -->  
+
+### 신청곡
+<img width="1415" alt="신청곡1" src="https://github.com/chancehee/MUSICAT/assets/59447235/19d1e785-fe25-4060-9ea6-68040495215e"> 
+<br>
+<img width="1413" alt="신청곡2" src="https://github.com/chancehee/MUSICAT/assets/59447235/2385b436-6a29-4db1-83ee-97b98d0d4fd4">
+<br>
+원하는 노래를 신청하고 라디오 DJ의 리액션을 들을 수 있습니다.
 
 ### 사연신청
 ![사연신청](./image/사연신청.gif)  
 다양한 목소리의 화자를 선택할 수 있습니다. 
 
-### 노래신청
-![노래신청](./image/노래신청.gif)  
+<!-- ![노래신청](./image/노래신청.gif)   -->
 
 ### 채팅
 ![채팅](./image/채팅.gif)  
-라디오 DJ 또는 청취자와 소통할 수 있습니다.
+라디오 DJ 및 청취자와 소통할 수 있습니다.
 
 <!--### 마이페이지
 ![마이페이지](./image/마이페이지.gif)  
@@ -161,24 +168,13 @@ Musicat은 인공지능 DJ가 진행하는 고품격 라디오 서비스입니�
 ![관리자페이지](./image/관리자페이지.gif)  
 다른 사용자들의 상태를 관리하는 페이지. 관리자만 들어갈 수 있다. 사용자들의 채팅, 정지 여부 상태를 변경 가능하다. -->
 
-## 👪 개발 멤버 소개
 
-<table>
-    <tr>
-        <td height="140px" align="center"> 
-            <img src="./image/human5.png" width="140px" /> <br><br> 😶 최다은 <br>(Front-End) </a> <br></td>
-        <td height="140px" align="center"> 
-            <img src="./image/human3.png" width="140px" /> <br><br> 🙂 박동환 <br>(Front-End) </a> <br></td>
-        <td height="140px" align="center">
-            <img src="./image/human6.png" width="140px" /> <br><br> 😆 이연학 <br>(Front-End) </a> <br></td>
-        <td height="140px" align="center">
-            <img src="./image/human1.png" width="140px" /> <br><br> 👑 김동언 <br>(Back-End) </a> <br></td>
-        <td height="140px" align="center"> 
-            <img src="./image/human2.png" width="140px" /> <br><br> 😁 이찬희 <br>(Back-End) </a> <br></td>
-		<td height="140px" align="center"> 
-            <img src="./image/human4.png" width="140px" /> <br><br> 😶 최웅렬 <br>(Back-End) </a> <br></td>
-    </tr>
-</table>
+### 📆 프로젝트 기간 (23.02.27 ~ 23.04.07)
+
+- 기획 및 설계 : 23.02.27 ~ 23.03.05
+- 프로젝트 구현 : 23.03.06 ~ 23.04.02
+- 버그 수정 및 산출물 정리 : 23.04.03 ~ 23.04.07
+
 
 
 <!-- ### 기능 기획서
@@ -200,6 +196,27 @@ Musicat은 인공지능 DJ가 진행하는 고품격 라디오 서비스입니�
   ![ERD](./image/ERD.png)
 
   ---
+
+
+## 👪 개발 멤버 소개
+
+<table>
+    <tr>
+        <td height="140px" align="center"> 
+            <img src="./image/human5.png" width="140px" /> <br><br> 😶 최다은 <br>(Front-End) </a> <br></td>
+        <td height="140px" align="center"> 
+            <img src="./image/human3.png" width="140px" /> <br><br> 🙂 박동환 <br>(Front-End) </a> <br></td>
+        <td height="140px" align="center">
+            <img src="./image/human6.png" width="140px" /> <br><br> 😆 이연학 <br>(Front-End) </a> <br></td>
+        <td height="140px" align="center">
+            <img src="./image/human1.png" width="140px" /> <br><br> 👑 김동언 <br>(Back-End) </a> <br></td>
+        <td height="140px" align="center"> 
+            <img src="./image/human2.png" width="140px" /> <br><br> 😁 이찬희 <br>(Back-End) </a> <br></td>
+		<td height="140px" align="center"> 
+            <img src="./image/human4.png" width="140px" /> <br><br> 😶 최웅렬 <br>(Back-End) </a> <br></td>
+    </tr>
+</table>
+
 
 ## 프로젝트 참고 링크
 
