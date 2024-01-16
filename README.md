@@ -1,6 +1,6 @@
 ![프로젝트 로고](./image/Logo.png/)
 
-Musicat은 인공지능 DJ가 진행하는 고품격 라디오 서비스입니다. DJ 및 청취자와 채팅으로 소통할 수 있고, 사연과 음악 신청도 가능합니다. 
+Musicat은 AI DJ가 진행하는 연중무휴 라디오 서비스입니다. DJ 및 청취자와 채팅으로 소통할 수 있고, 사연과 노래 신청도 가능합니다. 
 
 <!-- 프로젝트 UCC : [Musicat - UCC](https://ramen-buang.notion.site/Musicat-UCC-c561acbeb18743fb94ad90b9eeb6be23)
 
